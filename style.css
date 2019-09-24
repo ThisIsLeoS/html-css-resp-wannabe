@@ -80,7 +80,7 @@ img{
   /* rules used in specific parts of the page */
 
   body {
-    /* to avoid a layout problem when the viewport's width is less than 327px (327px is the width of the largest static element of the page (the boy image))*/
+    /* to avoid a layout problem when the viewport's width is less than 327px (327px is the width of the largest static element of the page (the laptop image))*/
     min-width: 327px;
   }
 
