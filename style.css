@@ -66,32 +66,49 @@ img{
   clear:both;
 }
 
+/* smartphones */
 @media screen and (max-width: 419px) {
 
-  /* reset rules */
-  * {
-    margin: 0;
-    border: 0;
-    padding: 0;
-    box-sizing: border-box;
+  /* rules used (or usable) in different parts of the page */
+  .row {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
   }
 
-      .row {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-      }
+  /* rules used in specific parts of the page */
+
+  body {
+    /* to avoid a layout problem when the viewport's width is less than 327px (327px is the width of the largest static element of the page (the boy image))*/
+    min-width: 327px;
+  }
 
     /* BLOCCO LEZIONI */
-    #lezioni .row > .left, #lezioni .row > .right{
-      width: 100%;
-    }
+        #lezioni .row > .left, #lezioni .row > .right{
+          width: 100%;
+        }
+
+        #lezioni .row > .right {
+          padding-top: 15px;
+        }
 
     /* BLOCCO STEPS */
-    #steps .row > .left,
-    #steps .row > .central,
-    #steps .row > .right{
-      width: 100%;
-    }
+        #steps .row > .left,
+        #steps .row > .central,
+        #steps .row > .right {
+          width: 100%;
+        }
+
+        #steps .row > .central,
+        #steps .row > .right {
+          padding-top: 15px;
+        }
+
+    /* BLOCCO PERCHE */
+        #why .row > .first,
+        #why .row > .second,
+        #why .row > .third {
+          margin-top: 40px;
+        }
 }
